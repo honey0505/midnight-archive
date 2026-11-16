@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#090b20"><meta name="description" content="A private midnight archive, made of little moments and a forever.">
+<title>The Midnight Archive</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="starscape" aria-hidden="true" id="stars"></div><div class="grain" aria-hidden="true"></div>
+<button class="music" id="musicBtn" aria-label="Toggle ambient music" title="Ambient music">♫ <span>sound off</span></button>
+<main>
+<section class="gate screen active" id="gate">
+  <div class="moon"></div><div class="gate-kicker">A PRIVATE COLLECTION</div>
+  <h1>The Midnight<br><em>Archive</em></h1>
+  <p class="gate-copy">Some stories are not written in books.<br>They are kept somewhere between the stars.</p>
+  <div class="lockline">✧ &nbsp; A little key is needed to enter &nbsp; ✧</div>
+  <form id="unlockForm"><input id="password" type="password" placeholder="Enter the secret phrase" autocomplete="off" aria-label="Secret phrase"><button class="gold-btn" type="submit">Open the archive <span>↗</span></button><p class="error" id="error" aria-live="polite"></p></form>
+  <div class="gate-foot">MADE OF MOMENTS · KEPT FOREVER</div>
+</section>
+<section class="story screen" id="story">
+  <header class="topbar"><span class="brand">THE MIDNIGHT ARCHIVE</span><span id="counter">01 / 15</span></header>
+  <div class="progress"><i id="progressFill"></i></div>
+  <div class="chapter-wrap" id="chapterWrap">
+    <div class="chapter-copy">
+      <div class="eyebrow" id="chapterEyebrow">CHAPTER ONE · THE BEGINNING</div>
+      <h2 id="chapterTitle">A quiet afternoon</h2>
+      <p class="chapter-text" id="chapterText"></p>
+      <div class="chapter-quote" id="chapterQuote"></div>
+      <div class="chapter-foot"><span id="chapterDate"></span><button class="next-btn" id="nextBtn">Continue <span>→</span></button></div>
+    </div>
+    <div class="art-frame"><div class="art-label">A MOMENT, REIMAGINED</div><div id="sceneArt" class="scene-art"></div><div class="art-caption" id="artCaption">Somewhere, a story was beginning.</div></div>
+  </div>
+  <footer class="story-footer">LET THE MOMENTS FIND THEIR WAY</footer>
+</section>
+<section class="letter screen" id="letter">
+  <div class="letter-stars">✧　✦　✧</div><div class="eyebrow">THE LAST PAGE BEFORE THE TRUTH</div>
+  <h2>To the boy who<br><em>became my home.</em></h2>
+  <div class="letter-paper" id="letterPaper"></div>
+  <div class="letter-sign">It's forever you and only you.<br><span>— yours, always</span></div>
+  <button class="gold-btn reveal-btn" id="revealBtn">There is one last thing… <span>✧</span></button>
+</section>
+<section class="reveal screen" id="reveal">
+  <div class="reveal-glow"></div><div class="eyebrow">THE SECRET, AT LAST</div>
+  <h2>It was never just a story.<br><em>It was us.</em></h2>
+  <p class="reveal-line">Every little scene was a memory. Every page was a piece of you.</p>
+  <div class="photo-stage" id="photoStage"><div class="photo-count" id="photoCount">A MEMORY, HELD CLOSE</div><img id="memoryPhoto" src="assets/memory-02.jpg" alt="A photograph from the memories"><div class="photo-caption" id="photoCaption">A little piece of forever</div><div class="photo-controls"><button id="prevPhoto" aria-label="Previous photo">←</button><span id="photoIndex">01 / 15</span><button id="nextPhoto" aria-label="Next photo">→</button></div></div>
+  <p class="gallery-note">And then, all the little moments find a place together.</p>
+  <div class="memory-wall" id="memoryWall"></div>
+  <div class="forever">MR. &amp; MRS. GANIVADA <span>✧</span><small>Our forever begins again, every day.</small><strong>It's forever you and only you.</strong></div>
+  <button class="restart" id="restartBtn">Return to the beginning ↗</button>
+</section>
+</main>
+<script src="script.js"></script>
+</body></html>
